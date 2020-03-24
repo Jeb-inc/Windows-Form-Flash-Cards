@@ -1,1 +1,1 @@
-A flashcard app to help us with revision for multiple subjects.
+We have stopped this project as GCSE's got cancelled.
