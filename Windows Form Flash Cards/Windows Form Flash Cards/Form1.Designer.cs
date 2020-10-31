@@ -28,74 +28,61 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.subjectSelector = new System.Windows.Forms.ComboBox();
+            this.reviseBt1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // checkBox1
+            // subjectSelector
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(12, 38);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(71, 17);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Subject 1";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.subjectSelector.FormattingEnabled = true;
+            this.subjectSelector.Items.AddRange(new object[] {
+            "Computer Science",
+            "English Literature",
+            "Product Design",
+            "Chemistry",
+            "Biology",
+            "Physics",
+            "German",
+            "History",
+            "Maths"});
+            this.subjectSelector.Location = new System.Drawing.Point(7, 23);
+            this.subjectSelector.Name = "subjectSelector";
+            this.subjectSelector.Size = new System.Drawing.Size(116, 21);
+            this.subjectSelector.TabIndex = 0;
             // 
-            // checkBox2
+            // reviseBt1
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(12, 62);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(71, 17);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "Subject 2";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(12, 108);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(71, 17);
-            this.checkBox3.TabIndex = 3;
-            this.checkBox3.Text = "Subject 4";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(12, 85);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(71, 17);
-            this.checkBox4.TabIndex = 2;
-            this.checkBox4.Text = "Subject 3";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.reviseBt1.Location = new System.Drawing.Point(129, 23);
+            this.reviseBt1.Name = "reviseBt1";
+            this.reviseBt1.Size = new System.Drawing.Size(75, 23);
+            this.reviseBt1.TabIndex = 1;
+            this.reviseBt1.Text = "Revise";
+            this.reviseBt1.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 9);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Select subjects to revise:";
+            this.label1.Size = new System.Drawing.Size(116, 20);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Select Subject:";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(278, 139);
+            this.ClientSize = new System.Drawing.Size(210, 49);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.reviseBt1);
+            this.Controls.Add(this.subjectSelector);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Flashcards";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -104,10 +91,8 @@
 
         #endregion
 
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.ComboBox subjectSelector;
+        private System.Windows.Forms.Button reviseBt1;
         private System.Windows.Forms.Label label1;
     }
 }
